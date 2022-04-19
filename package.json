@@ -1,0 +1,20 @@
+{
+    "name": "designpatternpractice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "scripts": {
+        "test": "jest --testMatch \"**/?(*.)+(spec|test).ts?(x)\"",
+        "start": "tsc && node ./dist/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "ts-jest": "^27.1.4"
+    },
+    "jest": {
+        "preset": "ts-jest"
+    }
+}
