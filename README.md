@@ -3,3 +3,7 @@ This project is a series of implementations based on the book _[Dive Into Design
 
 ## How to run this project
 Download VSCode and docker, then follow the document _[Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)_ to setup environment. Alternatively, you can manually install necessary dependencies by reading devcontainer.json
+
+
+## Content
+1. Factory Method Pattern

@@ -1,1 +1,3 @@
-console.log("Hello World");
+import { main } from './01-FactoryMethod';
+
+main();
