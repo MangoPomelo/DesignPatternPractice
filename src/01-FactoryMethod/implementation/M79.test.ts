@@ -24,6 +24,8 @@ describe('test on setups', () => {
     it.each([
         {name: 'ConsoleLog', fn: console.log},
         {name: 'SmokeGrenade', fn: SmokeGrenade},
+        {name: 'FlareGrenade', fn: FlareGrenade},
+        {name: 'ExplosiveGrenade', fn: ExplosiveGrenade}
     ])('should be true that $name is mocked', ({name, fn}) => {
         expect(jest.isMockFunction(fn)).toBe(true);
     });
