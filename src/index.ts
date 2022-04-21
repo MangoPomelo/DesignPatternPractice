@@ -1,3 +1,3 @@
-import { main } from './01-FactoryMethod';
+import { main } from './02-AbstractFactory';
 
 main();
