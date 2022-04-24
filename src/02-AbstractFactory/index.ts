@@ -2,7 +2,7 @@ import { Soldier } from './implementation/Soldier';
 import { AmericanFactory, GermanFactory, RussianFactory } from './implementation/Factory';
 
 
-export const main = (): void => {
+export function main(): void {
     // Comes a soldier with american weapons
     (new Soldier(new AmericanFactory())).killEmAll();
 

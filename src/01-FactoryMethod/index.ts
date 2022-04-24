@@ -1,7 +1,7 @@
 import { ExplosiveM79, FlareM79, SmokeM79 } from "./implementation/M79";
 
 
-export const main = (): void => {
+export function main(): void {
     // Shoot a smoke M79
     const smokeM79 = new SmokeM79();
     smokeM79.launch();
