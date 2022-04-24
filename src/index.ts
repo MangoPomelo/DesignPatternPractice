@@ -1,3 +1,3 @@
-import { main } from './03-Builder';
+import { main } from './04-Prototype';
 
 main();
