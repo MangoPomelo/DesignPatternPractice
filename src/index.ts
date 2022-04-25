@@ -1,3 +1,3 @@
-import { main } from './05-Singleton';
+import { main } from './06-Adapter';
 
 main();
