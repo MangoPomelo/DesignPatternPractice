@@ -1,3 +1,3 @@
-import { main } from './07-Bridge';
+import { main } from './08-Composite';
 
 main();
