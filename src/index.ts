@@ -1,3 +1,3 @@
-import { main } from './06-Adapter';
+import { main } from './07-Bridge';
 
 main();
