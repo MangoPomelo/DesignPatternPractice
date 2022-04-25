@@ -1,3 +1,3 @@
-import { main } from './08-Composite';
+import { main } from './09-Decorator';
 
 main();
