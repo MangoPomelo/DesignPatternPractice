@@ -4,7 +4,7 @@
     "description": "",
     "main": "./dist/index.js",
     "scripts": {
-        "test": "jest --testMatch \"**/?(*.)+(spec|test).ts?(x)\" --passWithNoTests",
+        "test": "jest --testMatch \"**/?(*.)+(spec|test).ts?(x)\" --passWithNoTests --onlyChanged",
         "start": "tsc && node ./dist/index.js",
         "clean": "rm -rf ./node_modules"
     },
