@@ -1,3 +1,3 @@
-import { main } from './10-Facade';
+import { main } from './11-Flyweight';
 
 main();
