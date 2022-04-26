@@ -2,13 +2,24 @@ import { PlayerFactory } from "./PlayerFactory";
 import { CounterTerrorist, Terrorist, PlayerFlyweight } from "./Player";
 
 
+
 jest.mock('./Player', () => ({
     CounterTerrorist: jest.fn(),
     Terrorist: jest.fn(),
-    PlayerFlyweight: jest.fn().mockImplementation((task, texture) => ({
-        getTexture: jest.fn().mockReturnValue(texture),
-        getTask: jest.fn().mockReturnValue(task)
-    }))
+    PlayerFlyweight: jest.fn().mockImplementation((task, texture) => new (class PlayerFlyweight {
+        private _task: string;
+        private _texture: string;
+        constructor(task: string, texture: string) {
+            this._task = task;
+            this._texture = texture;
+        }
+        getTask(): string {
+            return this._task;
+        }
+        getTexture(): string{
+            return this._texture;
+        }
+    })(task, texture))
 }));
 afterEach(() => {
     jest.clearAllMocks();
