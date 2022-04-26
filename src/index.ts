@@ -1,3 +1,3 @@
-import { main } from './09-Decorator';
+import { main } from './10-Facade';
 
 main();
