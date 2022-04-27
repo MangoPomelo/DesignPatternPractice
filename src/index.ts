@@ -1,3 +1,3 @@
-import { main } from './11-Flyweight';
+import { main } from './12-Proxy';
 
 main();
