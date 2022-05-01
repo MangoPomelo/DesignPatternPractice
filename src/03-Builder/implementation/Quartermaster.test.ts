@@ -1,6 +1,5 @@
 import { BreachManKitBuilder } from './Builder';
 import { Quartermaster } from './Quartermaster';
-import { mocked } from 'jest-mock';
 
 
 jest.mock('./Builder');
@@ -8,11 +7,10 @@ afterEach(() => {
     jest.clearAllMocks();
 })
 
-
 describe('test on Quartermaster', () => {
     it('should work when calling Quartermaster.provideForPatrolman', () => {
         // given
-        const builder = mocked(new BreachManKitBuilder());
+        const builder = new BreachManKitBuilder();
         const qm = new Quartermaster(builder);
         // when
         qm.provideForPatrolman();
@@ -28,7 +26,7 @@ describe('test on Quartermaster', () => {
 
     it('should work when calling Quartermaster.provideForSpecialForce', () => {
         // given
-        const builder = mocked(new BreachManKitBuilder());
+        const builder = new BreachManKitBuilder();
         const qm = new Quartermaster(builder);
         // when
         qm.provideForPatrolman();
@@ -44,7 +42,7 @@ describe('test on Quartermaster', () => {
 
     it('should work when calling Quartermaster.provideForFrontlineSoldier', () => {
         // given
-        const builder = mocked(new BreachManKitBuilder());
+        const builder = new BreachManKitBuilder();
         const qm = new Quartermaster(builder);
         // when
         qm.provideForPatrolman();
