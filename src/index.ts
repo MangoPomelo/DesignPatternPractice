@@ -1,3 +1,3 @@
-import { main } from './12-Proxy';
+import { main } from './13-ChainOfResponsibility';
 
 main();
