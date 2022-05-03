@@ -1,3 +1,3 @@
-import { main } from './15-Iterator';
+import { main } from './16-Mediator';
 
 main();
