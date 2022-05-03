@@ -16,8 +16,8 @@ afterEach(() => {
     jest.clearAllMocks();
 });
 
-describe('Test on Missile', () => {
-    describe('Test on Barrel', () => {
+describe('test on Missile', () => {
+    describe('test on Barrel', () => {
         it('should be thrown and apply correct damage to the target', () => {
             // given
             const target = new Gate('the Back Gate', 100);

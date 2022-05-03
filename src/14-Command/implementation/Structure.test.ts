@@ -1,8 +1,8 @@
 import { Gate } from './Structure';
 
 
-describe('Test on Structure', () => {
-    describe('Test on Gate', () => {
+describe('test on Structure', () => {
+    describe('test on Gate', () => {
         it('should be destroyed when state is 0', () => {
             // given
             const initState = 0;

@@ -6,7 +6,7 @@ afterEach(() => {
     jest.clearAllMocks();
 });
 
-describe('Test on PlayerFlyweight', () => {
+describe('test on PlayerFlyweight', () => {
     it('should work correctly', () => {
         // given
         const task = 'plant a bomb';
@@ -19,13 +19,13 @@ describe('Test on PlayerFlyweight', () => {
     });
 });
 
-describe('Test on Player', () => {
+describe('test on Player', () => {
     const MockedFlyweight = jest.fn().mockImplementation((task, texture) => ({
         getTexture: jest.fn().mockReturnValue(texture),
         getTask: jest.fn().mockReturnValue(task)
     })) as jest.Mock<PlayerFlyweight>;
 
-    describe('Test on Terrorist', () => {
+    describe('test on Terrorist', () => {
         it('should work correctly when displaying mission', () => {
             // given
             const weapon = 'AK47';
@@ -80,7 +80,7 @@ describe('Test on Player', () => {
         });
     });
 
-    describe('Test on CounterTerrorist', () => {
+    describe('test on CounterTerrorist', () => {
         it('should work correctly when displaying mission', () => {
             // given
             const weapon = 'M4A1';

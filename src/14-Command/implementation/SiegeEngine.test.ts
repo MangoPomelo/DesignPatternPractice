@@ -21,8 +21,8 @@ afterEach(() => {
     jest.clearAllMocks();
 });
 
-describe('Test on SiegeEngine', () => {
-    describe('Test on Catapult', () => {
+describe('test on SiegeEngine', () => {
+    describe('test on Catapult', () => {
         it('should launch when loaded', () => {
             // given
             const kineticDamage = 100;

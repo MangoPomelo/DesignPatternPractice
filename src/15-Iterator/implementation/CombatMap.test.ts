@@ -1,7 +1,7 @@
 import { CombatMap } from './CombatMap';
 
 
-describe('Test on CombatMap', () => {
+describe('test on CombatMap', () => {
     it('should gives right neighbors', () => {
         // given
         const wakeIsland = new CombatMap(

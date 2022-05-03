@@ -18,13 +18,13 @@ function createWakeIslandCombatMap(): CombatMap {
 }
 
 
-describe('Test on Iterator', () => {
+describe('test on Iterator', () => {
     let wakeIsland = createWakeIslandCombatMap();
     beforeEach(() => {
         wakeIsland = createWakeIslandCombatMap();
     });
 
-    describe('Test on AttackingIterator', () => {
+    describe('test on AttackingIterator', () => {
         it('should give true when invoke Iterator.hasMore() with intact aggregate', () => {
             // given
             const attackingIterator = wakeIsland.createAttackingIterator();
@@ -73,7 +73,7 @@ describe('Test on Iterator', () => {
         });
     });
 
-    describe('Test on DefendingIterator', () => {
+    describe('test on DefendingIterator', () => {
         it('should give true when invoke Iterator.hasMore() with intact aggregate', () => {
             // given
             const attackingIterator = wakeIsland.createDefendingIterator();

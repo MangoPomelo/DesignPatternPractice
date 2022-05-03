@@ -6,7 +6,7 @@ afterEach(() => {
     jest.clearAllMocks();
 });
 
-describe('Test on Squadron', () => {
+describe('test on Squadron', () => {
     it('should work correctly', () => {
         // given
         const a = 'H';
@@ -20,7 +20,7 @@ describe('Test on Squadron', () => {
     });
 });
 
-describe('Test on TACP', () => {
+describe('test on TACP', () => {
     it('should work correctly', () => {
         // given
         const MockedSquadron = jest.fn().mockImplementation(() => ({

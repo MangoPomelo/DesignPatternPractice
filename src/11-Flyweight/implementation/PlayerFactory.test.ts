@@ -26,7 +26,7 @@ afterEach(() => {
     PlayerFactory.clearAllFlyweights();
 });
 
-describe('Test on PlayerFactory', () => {
+describe('test on PlayerFactory', () => {
     it('should create terrorist correctly', () => {
         // given
         const weapon = 'AK47';
