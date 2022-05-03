@@ -1,3 +1,3 @@
-import { main } from './13-ChainOfResponsibility';
+import { main } from './14-Command';
 
 main();
