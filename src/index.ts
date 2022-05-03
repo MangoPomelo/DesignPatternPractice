@@ -1,3 +1,3 @@
-import { main } from './14-Command';
+import { main } from './15-Iterator';
 
 main();
