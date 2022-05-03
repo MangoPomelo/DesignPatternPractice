@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "spmeesseman.vscode-taskexplorer",
+        "tabnine.tabnine-vscode",
+        "gordonlarrigan.vscode-kanbn"
+    ]
+}
