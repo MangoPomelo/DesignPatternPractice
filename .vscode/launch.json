@@ -17,7 +17,8 @@
             "request": "launch",
             "name": "Test",
             "runtimeExecutable": "npm",
-            "runtimeArgs": [ "test" ]
+            "runtimeArgs": [ "test", "--", "--runInBand" ],
+            "console": "internalConsole"
         }
     ]
 }
