@@ -1,6 +1,5 @@
 import { AmericanFactory, GermanFactory, RussianFactory } from "./Factory";
 import { Soldier } from "./Soldier";
-import { mocked } from 'jest-mock';
 import { AK47, G36A2, M16A4 } from "./Rifle";
 import { M60E4, MG3, PKP } from "./MachineGun";
 import { M1911A1, Makarov, USP45 } from "./Pistol";
@@ -22,7 +21,7 @@ describe('test on Soldier', () => {
         const mockedMachineGun = new M60E4();
         const mockedPistol = new M1911A1();
 
-        const stubProvider = mocked(new AmericanFactory());
+        const stubProvider = jest.mocked(new AmericanFactory());
         stubProvider.createRifle.mockReturnValue(mockedRifle);
         stubProvider.createMachineGun.mockReturnValue(mockedMachineGun);
         stubProvider.createPistol.mockReturnValue(mockedPistol);
@@ -49,7 +48,7 @@ describe('test on Soldier', () => {
         const mockedMachineGun = new MG3();
         const mockedPistol = new USP45();
 
-        const stubProvider = mocked(new GermanFactory());
+        const stubProvider = jest.mocked(new GermanFactory());
         stubProvider.createRifle.mockReturnValue(mockedRifle);
         stubProvider.createMachineGun.mockReturnValue(mockedMachineGun);
         stubProvider.createPistol.mockReturnValue(mockedPistol);
@@ -76,7 +75,7 @@ describe('test on Soldier', () => {
         const mockedMachineGun = new PKP();
         const mockedPistol = new Makarov();
 
-        const stubProvider = mocked(new RussianFactory());
+        const stubProvider = jest.mocked(new RussianFactory());
         stubProvider.createRifle.mockReturnValue(mockedRifle);
         stubProvider.createMachineGun.mockReturnValue(mockedMachineGun);
         stubProvider.createPistol.mockReturnValue(mockedPistol);
