@@ -1,3 +1,3 @@
-import { main } from './16-Mediator';
+import { main } from './17-Memento';
 
 main();
