@@ -2,7 +2,7 @@ import { SniperKitBuilder, BreachManKitBuilder } from "./Builder";
 import { Kit } from './Kit';
 
 jest.mock('./Kit');
-const mockedKit = Kit as jest.Mock<Kit>;
+const MockedKit = Kit as jest.Mock<Kit>;
 afterEach(() => {
     jest.clearAllMocks();
 });
@@ -15,7 +15,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packPrimaryWeapon();
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M24');
     });
@@ -26,7 +26,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packSecondaryWeapon(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('MP7');
     });
@@ -37,7 +37,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packSecondaryWeapon(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('P226');
     });
@@ -48,7 +48,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packMeleeWeapon();
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('bayonet');
     });
@@ -59,7 +59,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packThrowableWeapon(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M67');
     });
@@ -70,7 +70,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packThrowableWeapon(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M18');
     });
@@ -81,7 +81,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packArmor(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addBodygear).toHaveBeenCalledTimes(1);
         expect(instance.addBodygear).toHaveBeenCalledWith('vest');
     });
@@ -92,7 +92,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packArmor(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addBodygear).toHaveBeenCalledTimes(1);
         expect(instance.addBodygear).toHaveBeenCalledWith('rig');
     });
@@ -103,7 +103,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packHelmet(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addHeadwear).toHaveBeenCalledTimes(1);
         expect(instance.addHeadwear).toHaveBeenCalledWith('helmet with NVG');
     });
@@ -114,7 +114,7 @@ describe('test on SniperKitBuilder', () => {
         // when
         builder.packHelmet(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addHeadwear).toHaveBeenCalledTimes(1);
         expect(instance.addHeadwear).toHaveBeenCalledWith('helmet');
     });
@@ -127,7 +127,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packPrimaryWeapon();
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('AA12');
     });
@@ -138,7 +138,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packSecondaryWeapon(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('G18');
     });
@@ -149,7 +149,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packSecondaryWeapon(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M9');
     });
@@ -160,7 +160,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packMeleeWeapon();
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('SEAL');
     });
@@ -171,7 +171,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packThrowableWeapon(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M67');
     });
@@ -182,7 +182,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packThrowableWeapon(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addOnHand).toHaveBeenCalledTimes(1);
         expect(instance.addOnHand).toHaveBeenCalledWith('M84');
     });
@@ -193,7 +193,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packArmor(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addBodygear).toHaveBeenCalledTimes(1);
         expect(instance.addBodygear).toHaveBeenCalledWith('vest');
     });
@@ -204,7 +204,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packArmor(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addBodygear).toHaveBeenCalledTimes(1);
         expect(instance.addBodygear).toHaveBeenCalledWith('rig');
     });
@@ -215,7 +215,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packHelmet(true);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addHeadwear).toHaveBeenCalledTimes(1);
         expect(instance.addHeadwear).toHaveBeenCalledWith('helmet with NVG');
     });
@@ -226,7 +226,7 @@ describe('test on BreachManKitBuilder', () => {
         // when
         builder.packHelmet(false);
         // then
-        const instance = mockedKit.mock.instances[0];
+        const instance = MockedKit.mock.instances[0];
         expect(instance.addHeadwear).toHaveBeenCalledTimes(1);
         expect(instance.addHeadwear).toHaveBeenCalledWith('helmet');
     });

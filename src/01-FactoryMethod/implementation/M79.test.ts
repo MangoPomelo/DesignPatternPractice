@@ -5,9 +5,9 @@ import { ExplosiveGrenade, FlareGrenade, SmokeGrenade } from './Grenade';
 // mock every class in the module
 jest.mock('./Grenade');
 // grab the references to the classes
-const mockedSmokeGrenade = SmokeGrenade as jest.Mock<SmokeGrenade>;
-const mockedFlareGrenade = FlareGrenade as jest.Mock<FlareGrenade>;
-const mockedExplosiveGrenade = ExplosiveGrenade as jest.Mock<ExplosiveGrenade>;
+const MockedSmokeGrenade = SmokeGrenade as jest.Mock<SmokeGrenade>;
+const MockedFlareGrenade = FlareGrenade as jest.Mock<FlareGrenade>;
+const MockedExplosiveGrenade = ExplosiveGrenade as jest.Mock<ExplosiveGrenade>;
 
 // overwrite console.log function (no needing to restore cuz every test runs in a parallel thread)
 console.log = jest.fn();
@@ -38,7 +38,7 @@ describe('test on SmokeM79', () => {
         // when
         smokeM79.launch();
         // then
-        expect(mockedSmokeGrenade).toHaveBeenCalledTimes(1);
+        expect(MockedSmokeGrenade).toHaveBeenCalledTimes(1);
     });
     it('should launch successfully', () => {
         // given
@@ -58,7 +58,7 @@ describe('test on SmokeM79', () => {
         smokeM79.launch();
         jest.advanceTimersByTime(2000);
         // then
-        const instance = mockedSmokeGrenade.mock.instances[0];
+        const instance = MockedSmokeGrenade.mock.instances[0];
         expect(instance.detonate).toHaveBeenCalledTimes(1);
     });
 });
@@ -70,7 +70,7 @@ describe('test on FlareM79', () => {
         // when
         flareM79.launch();
         // then
-        expect(mockedFlareGrenade).toHaveBeenCalledTimes(1);
+        expect(MockedFlareGrenade).toHaveBeenCalledTimes(1);
     });
     it('should launch successfully', () => {
         // given
@@ -90,7 +90,7 @@ describe('test on FlareM79', () => {
         flareM79.launch();
         jest.advanceTimersByTime(2000);
         // then
-        const instance = mockedFlareGrenade.mock.instances[0];
+        const instance = MockedFlareGrenade.mock.instances[0];
         expect(instance.detonate).toHaveBeenCalledTimes(1);
     });
 });
@@ -102,7 +102,7 @@ describe('test on ExplosiveM79', () => {
         // when
         explosiveM79.launch();
         // then
-        expect(mockedExplosiveGrenade).toHaveBeenCalledTimes(1);
+        expect(MockedExplosiveGrenade).toHaveBeenCalledTimes(1);
     });
     it('should launch successfully', () => {
         // given
@@ -122,7 +122,7 @@ describe('test on ExplosiveM79', () => {
         explosiveM79.launch();
         jest.advanceTimersByTime(2000);
         // then
-        const instance = mockedExplosiveGrenade.mock.instances[0];
+        const instance = MockedExplosiveGrenade.mock.instances[0];
         expect(instance.detonate).toHaveBeenCalledTimes(1);
     });
 });
