@@ -1,3 +1,3 @@
-import { main } from './19-State';
+import { main } from './20-Strategy';
 
 main();
