@@ -19,7 +19,7 @@ export abstract class M79 {
         // safety off
         this._isSafetyOn = false;
         // shoot
-        console.log('M79 launchs: 🚀');
+        console.log('M79 launches: 🚀');
         const timer = setTimeout((): void => {
             grenade.detonate();
             clearTimeout(timer);

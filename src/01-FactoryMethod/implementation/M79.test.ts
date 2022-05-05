@@ -47,7 +47,7 @@ describe('test on SmokeM79', () => {
         smokeM79.launch();
         // then
         expect(console.log).toHaveBeenCalledTimes(1);
-        expect(console.log).toHaveBeenLastCalledWith('M79 launchs: 🚀');
+        expect(console.log).toHaveBeenLastCalledWith('M79 launches: 🚀');
         expect(setTimeout).toHaveBeenCalledTimes(1);
         expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
     });
@@ -79,7 +79,7 @@ describe('test on FlareM79', () => {
         flareM79.launch();
         // then
         expect(console.log).toHaveBeenCalledTimes(1);
-        expect(console.log).toHaveBeenLastCalledWith('M79 launchs: 🚀');
+        expect(console.log).toHaveBeenLastCalledWith('M79 launches: 🚀');
         expect(setTimeout).toHaveBeenCalledTimes(1);
         expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
     });
@@ -111,7 +111,7 @@ describe('test on ExplosiveM79', () => {
         explosiveM79.launch();
         // then
         expect(console.log).toHaveBeenCalledTimes(1);
-        expect(console.log).toHaveBeenLastCalledWith('M79 launchs: 🚀');
+        expect(console.log).toHaveBeenLastCalledWith('M79 launches: 🚀');
         expect(setTimeout).toHaveBeenCalledTimes(1);
         expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
     });
