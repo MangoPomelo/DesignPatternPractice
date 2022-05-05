@@ -1,3 +1,3 @@
-import { main } from './20-Strategy';
+import { main } from './21-TemplateMethod';
 
 main();
