@@ -1,3 +1,3 @@
-import { main } from './21-TemplateMethod';
+import { main } from './22-Visitor';
 
 main();
